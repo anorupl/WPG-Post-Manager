@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Define the internationalization functionality
+ *
+ * Loads and defines the internationalization files for this plugin
+ * so that it is ready for translation.
+ *
+ * @since      1.0.0
+ *
+ * @package    Wpg_Post_Manager
+ * @subpackage Wpg_Post_Manager/includes
+ * @author     Anoru <anorupl@gmail.com>
+ * 
+ */
+
+/**
+ * Define the internationalization functionality.
+ *
+ * Loads and defines the internationalization files for this plugin
+ * so that it is ready for translation.
+ *
+ * @since      1.0.0
+ */
+class Wpg_Post_Manager_i18n {
+
+
+	/**
+	 * Load the plugin text domain for translation.
+	 *
+	 * @since    1.0.0
+	 */
+	public function load_plugin_textdomain() {
+
+		load_plugin_textdomain(
+			'wpg-post-manager',
+			false,
+			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
+		);
+
+	}
+
+
+
+}
